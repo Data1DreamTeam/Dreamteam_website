@@ -50,23 +50,16 @@
 						<!-- Assignment 2 -->
 							<article id="work">
 								<h2 class="major">Assignment 2</h2>
-								<span class="image main"><img src="images/Afghan_war_total_per_year.png" alt="" /> <figcaption>Figure 1: Total casualties per year - bar chart</figcaption></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
-								<span class="image main"><embed src="images/Total_casualties_pmpy_plotly.html" alt="" style=" display: block; width: 100%; height:430px; border: none; overflow: hidden; "/> <figcaption>Figure 2: Total casualties per year - Interactive line chart</figcaption></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+								<span id='plotly' class="image main"><embed src="images/Total_casualties_pmpy_plotly_legend.html" alt="" style=" display: block; width: 100%; height:430px; border: none; overflow: hidden; "/> <figcaption>Figure 1: Total casualties per year - Interactive line chart</figcaption></span>
+								<p>The first plot shows an interactive line chart of the total casualties from Civilians, Taliban, Afghan forces and Nato forces during the Afghan war between 2004 and 2009. You can hover over the chart to see which values correspond with that point on the line.</p>
 								<span class="image main"><embed 
 									src="images/Regional_breakdown_plotly.html" style=" display: block; width: 100%; height:400px; border: none; overflow: hidden; "/>
-										<figcaption>Figure 3: Interactive graph: Regional breakdown of total casualties</figcaption></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
-								<span class="image main"><img src="images/Total_casualties_line_chart.png" alt=""/> <figcaption>Figure 4: Civilian and Afghan forces casualties per month per year</figcaption></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
-								<span class="image main"><img src="images/Civilian_casualties_py.png" alt="" /> <figcaption>Figure 5: Civilian casualties per year</figcaption></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+										<figcaption>Figure 2: Interactive graph: Regional breakdown of total casualties</figcaption></span>
+								<p>The second plot is a horizontal oriented interactive bar chart showing the regional breakdown of the IED attacks.</p>
+								<span class="image main"><img src="images/Total_casualties_line_chart.png" alt=""/> <figcaption>Figure 3: Civilian and Afghan forces casualties per month per year</figcaption></span>
+								<p>Figure 3 is a breakdown of the first plot and illustrates the total casualties of the Civilian and Afghan forces groups per month. The color of the lines indicated the year of the data.</p>
+								<span class="image main"><img src="images/Civilian_casualties_py.png" alt="" /> <figcaption>Figure 4: Civilian casualties per year</figcaption></span>
+								<p>The final figure is a bar chart breakdown of the casualties among civilians during the time period 2004-2009. Figure 4 shows the total number of civilian casualties on the y-axis and the color of the bar charts illustrated the year of the data.</p>
 							</article>
 
 						<!-- Assignment 3 -->
@@ -211,6 +204,29 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<!-- script for plotly legend smaller screen width then hide legend -->
+			<script>
+				// Function to check screen width and update the legend visibility
+				function updateLegendVisibility() {
+					let plotDiv = document.getElementById('plotly'); // Assuming 'plot' is the ID of your Plotly graph
+					let screenWidth = window.innerWidth;
+					
+					// If screen width is less than 480px, hide the legend
+					if (screenWidth <= 480) {
+						Plotly.relayout(plotly, {'showlegend': false});
+					} else {
+						Plotly.relayout(plotly, {'showlegend': true});
+					}
+				}
+			  
+				// Call the function initially
+				updateLegendVisibility();
+			  
+				// Update on screen resize
+				window.addEventListener('resize', updateLegendVisibility);
+			  </script>
+			  
 
 	</body>
 </html>

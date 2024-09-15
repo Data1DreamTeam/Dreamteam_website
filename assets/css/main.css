@@ -438,6 +438,12 @@ input, select, textarea {
 
 		}
 
+		@media screen and (max-width: 480px) {
+			.legend {
+			  display: none !important; /* Not always reliable with Plotly */
+			}
+		  }
+		  
 	
 
 /* List */
