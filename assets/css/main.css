@@ -495,7 +495,30 @@ input, select, textarea {
     }
 }
 		  
-	
+/* Download labs */
+.Download_lab { 
+	display: block;
+	margin: auto;
+  padding: 15px 25px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: navy;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 6px #626262;
+} 
+
+.Download_lab:hover {background-color: peru}
+
+.Download_lab:active {
+  background-color: peru;
+  box-shadow: 0 6px #282828;
+  transform: translateY(4px);
+}
 
 /* List */
 
@@ -736,10 +759,10 @@ input, select, textarea {
 		}
 
 		#bg:before {
-			-moz-transition: background-color 2.5s ease-in-out;
-			-webkit-transition: background-color 2.5s ease-in-out;
-			-ms-transition: background-color 2.5s ease-in-out;
-			transition: background-color 2.5s ease-in-out;
+			-moz-transition: background-color 1.5s ease-in-out;
+			-webkit-transition: background-color 1.5s ease-in-out;
+			-ms-transition: background-color 1.5s ease-in-out;
+			transition: background-color 1.5s ease-in-out;
 			-moz-transition-delay: 0.75s;
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
